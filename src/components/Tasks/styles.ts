@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   margin: 5.75rem auto;
   max-width: 736px;
+  width: 90%;
 `
 
 export const Header = styled.header`
