@@ -30,8 +30,10 @@
 TodoList foi um projeto desenvolvido para fixação de conteúdo dos alunos no curso Ignite 2022 da Rocketseat.
 
 <p align="center">
-  <img src="![preview-gif](https://github.com/davysonwss/todo-list/assets/115579596/2e97b122-3574-4261-bf98-b4bd76d35967)">
+  <img src="https://ik.imagekit.io/g9drfwq2n/preview-gif.gif?updatedAt=1706657731232">
 </p>
+
+## 🌐 [Acesse o Projeto](https://todo-list-blush-kappa.vercel.app)
 
 ## ☑ Funcionalidades
 
@@ -50,14 +52,15 @@ TodoList foi um projeto desenvolvido para fixação de conteúdo dos alunos no c
 ### Desktop
 
 <p align="left"> 
-  <img src="![preview-desktop](https://github.com/davysonwss/todo-list/assets/115579596/a400432b-7a74-49a6-bc7b-8c93b3e1a2e6)" width="70%">
+  <img src="https://ik.imagekit.io/g9drfwq2n/preview-desktop.png?updatedAt=1706657747113" width="70%">
 </p>
+
 
 ### Mobile
 
 <p align="left">       
-  <img src="![preview-mobile-empty](https://github.com/davysonwss/todo-list/assets/115579596/6720f45d-f94c-49a6-842e-5a911e0d06da)" width="35%">
-  <img src="![preview-mobile-tasks](https://github.com/davysonwss/todo-list/assets/115579596/12c099ba-e933-4d17-9b84-65067740f547)" width="35%">
+  <img src="https://ik.imagekit.io/g9drfwq2n/preview-mobile-empty.png?updatedAt=1706657746939" width="35%">
+  <img src="https://ik.imagekit.io/g9drfwq2n/preview-mobile-tasks.png?updatedAt=1706657746874" width="35%">
 </p>
 
 ## 🔨 Tecnologias utilizadas
