@@ -1,3 +1,4 @@
+import { Task } from "../Task";
 import { Container, Header } from "./styles";
 
 export function Tasks() {
@@ -14,6 +15,7 @@ export function Tasks() {
           <span>2 de 10</span>
         </div>
       </Header>
+      <Task />
     </Container>
   )
 }
