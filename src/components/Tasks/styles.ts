@@ -37,3 +37,36 @@ export const Header = styled.header`
     }
   }
 `
+
+export const SectionEmptyTasks = styled.section`
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  svg {
+    opacity: 0.3;
+  }
+
+  div {
+    margin-top: 1rem;
+
+    p,
+    span {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      text-align: center;
+    }
+
+    p {
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+`
