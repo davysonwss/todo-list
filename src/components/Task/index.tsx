@@ -5,9 +5,10 @@ import { Trash } from "@phosphor-icons/react"
 
 interface Props {
   task: TTask
+  onDelete: (taskId: string) => void
 }
 
-export function Task({ task }: Props) {
+export function Task({ task, onDelete }: Props) {
   return (
     <Container>
       <div>
@@ -16,7 +17,7 @@ export function Task({ task }: Props) {
         />
         <p>{task.name}</p>
       </div>
-      <button type="button">
+      <button type="button" onClick={() => onDelete(task.id)}>
         <Trash size={18} />
       </button>
     </Container>
