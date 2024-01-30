@@ -19,25 +19,6 @@ export const Container = styled.li`
     flex: 1;
     gap: 0.75rem;
 
-    input[type='checkbox'] {
-      appearance: none;
-      -webkit-appearance: none;
-      width: 1.5em;
-      height: 1.5em;
-
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background: transparent;
-      border-radius: 50%;
-      border: 2px solid var(--blue);
-      color: var(--gray-100);
-      outline: none;
-      cursor: pointer;
-    }
-
     p {
       font-size: 0.875rem;
       color: var(--gray-100);
@@ -45,17 +26,17 @@ export const Container = styled.li`
       &:first-letter {
         text-transform: uppercase;
       }
+
+      &.taskCompleted {
+        text-decoration: line-through;
+        color: var(--gray-300);
+      }
     }
   }
 
   &.completed > div p {
     color: var(--gray-300);
     text-decoration-line: line-through;
-  }
-
-  &.completed > div input[type='checkbox'] {
-    background-color: var(--purple-dark);
-    border: none;
   }
 
   & + li {
@@ -66,5 +47,24 @@ export const Container = styled.li`
     background: none;
     border: none;
     color: var(--gray-300);
+  }
+`
+
+export const BtnChecked = styled.button`
+  min-width: 1.125rem;
+  height: 1.125rem;
+  background: none;
+  border: none;
+
+  div {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 `
