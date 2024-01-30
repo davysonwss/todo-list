@@ -17,7 +17,7 @@ export const Container = styled.header`
 `
 
 export const NewTaskForm = styled.form`
-  width: 100%;
+  width: 90%;
   max-width: 736px;
   height: 3.375rem;
 
