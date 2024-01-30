@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
 
 import { Header } from "./components/Header";
@@ -6,11 +6,31 @@ import { Tasks } from "./components/Tasks";
 
 import { TTask } from "./types/task";
 
+const LOCAL_STORAGE_KEY = '@todo-app:tasks-state-1.0.0'
+
 export function App() {
   const [tasks, setTasks] = useState<TTask[]>([])
 
+  function loadedSavedTasks() {
+    const saved = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (saved) {
+      setTasks(JSON.parse(saved))
+    }
+    return []
+  }
+
+  useEffect(() => {
+    loadedSavedTasks()
+  }, [])
+
+  function setTasksAndSave(newTasks: TTask[]) {
+    setTasks(newTasks)
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newTasks))
+  }
+
   function addTask(taskName: string) {
-    setTasks((state) => [...state, {
+    setTasksAndSave([...tasks, {
       id: uuid(),
       name: taskName,
       isCompleted: false
@@ -20,7 +40,7 @@ export function App() {
   function deleteTask(taskId: string) {
     const newTasks = tasks.filter(task => task.id !== taskId)
 
-    setTasks(newTasks)
+    setTasksAndSave(newTasks)
   }
 
   function toggleTaskCompleted(taskId: string) {
@@ -33,7 +53,7 @@ export function App() {
       return task
     })
 
-    setTasks(newTasks)
+    setTasksAndSave(newTasks)
   }
 
   return (
