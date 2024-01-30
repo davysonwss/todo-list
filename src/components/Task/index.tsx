@@ -1,14 +1,20 @@
+import { TTask } from "../../types/task"
+
 import { Container } from "./styles"
 import { Trash } from "@phosphor-icons/react"
 
-export function Task() {
+interface Props {
+  task: TTask
+}
+
+export function Task({ task }: Props) {
   return (
     <Container>
       <div>
         <input
           type="checkbox"
         />
-        <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+        <p>{task.name}</p>
       </div>
       <button type="button">
         <Trash size={18} />
