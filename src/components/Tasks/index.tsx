@@ -1,21 +1,36 @@
+import { TTask } from "../../types/task";
+
 import { Task } from "../Task";
 import { Container, Header } from "./styles";
 
-export function Tasks() {
+interface Props {
+  tasks: TTask[]
+}
+
+export function Tasks({ tasks }: Props) {
+  const tasksQuantity = tasks.length
+  const completedTasks = tasks.filter((t) => t.isCompleted).length
+
   return (
     <Container>
       <Header>
         <div>
           <p>Tarefas criadas</p>
-          <span>0</span>
+          <span>{tasksQuantity}</span>
         </div>
 
         <div>
           <p className="text-detail">Concluídas</p>
-          <span>2 de 10</span>
+          <span>{completedTasks} de {tasksQuantity}</span>
         </div>
       </Header>
-      <Task />
+      <ul>
+        {tasks.map((t) => {
+          return (
+            <Task key={t.id} task={t} />
+          )
+        })}
+      </ul>
     </Container>
   )
 }
