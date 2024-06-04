@@ -52,15 +52,15 @@ TodoList foi um projeto desenvolvido para fixação de conteúdo dos alunos no c
 ### Desktop
 
 <p align="left"> 
-  <img src="https://ik.imagekit.io/g9drfwq2n/preview-desktop.png?updatedAt=1706657747113" width="70%">
+  <img src="https://ik.imagekit.io/g9drfwq2n/todo-list/preview-desktop.png?updatedAt=1715029858453" width="70%">
 </p>
 
 
 ### Mobile
 
 <p align="left">       
-  <img src="https://ik.imagekit.io/g9drfwq2n/preview-mobile-empty.png?updatedAt=1706657746939" width="35%">
-  <img src="https://ik.imagekit.io/g9drfwq2n/preview-mobile-tasks.png?updatedAt=1706657746874" width="35%">
+  <img src="https://ik.imagekit.io/g9drfwq2n/todo-list/preview-mobile-empty.png?updatedAt=1715029856684" width="35%">
+  <img src="https://ik.imagekit.io/g9drfwq2n/todo-list/preview-mobile-tasks.png?updatedAt=1715029860435" width="35%">
 </p>
 
 ## 🔨 Tecnologias utilizadas
